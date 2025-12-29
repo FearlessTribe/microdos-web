@@ -46,33 +46,64 @@ export const ElegantLanding: React.FC = () => {
           {/* Rounded Frame Container */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl">
             {/* Hero Background with Abstract Elements */}
-            <div className="relative h-[80vh] w-full bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
-              {/* Abstract Background Elements */}
+            <div className="relative h-[80vh] w-full overflow-hidden">
+              {/* Base Gradient Layer - Deep and Rich */}
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"></div>
+              
+              {/* Animated Gradient Overlay 1 - Turquoise to Lilac */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-calm-turquoise-600/40 via-transparent to-calm-lilac-600/40"></div>
+              
+              {/* Animated Gradient Overlay 2 - Yellow to Peach */}
+              <div className="absolute inset-0 bg-gradient-to-bl from-transparent via-calm-yellow-500/30 to-calm-peach-500/30"></div>
+              
+              {/* Radial Gradient Center - Bright Focus */}
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-calm-lilac-500/30 via-transparent to-transparent"></div>
+              
+              {/* Abstract Background Elements - Enhanced */}
               <div className="absolute inset-0">
-                {/* Large circular blob - top left */}
-                <div className="absolute -top-40 -left-40 w-96 h-96 bg-calm-turquoise-500/20 rounded-full blur-3xl"></div>
+                {/* Large animated blob - top left - Turquoise */}
+                <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-gradient-to-br from-calm-turquoise-500/40 to-calm-turquoise-300/20 rounded-full blur-3xl animate-pulse"></div>
                 
-                {/* Medium circular blob - top right */}
-                <div className="absolute top-20 -right-32 w-80 h-80 bg-calm-lilac-500/20 rounded-full blur-3xl"></div>
+                {/* Large animated blob - top right - Lilac */}
+                <div className="absolute top-10 -right-40 w-[450px] h-[450px] bg-gradient-to-bl from-calm-lilac-500/40 to-calm-lilac-300/20 rounded-full blur-3xl animate-pulse"></div>
                 
-                {/* Small circular blob - bottom left */}
-                <div className="absolute bottom-20 left-20 w-64 h-64 bg-calm-yellow-400/20 rounded-full blur-3xl"></div>
+                {/* Medium blob - center - Yellow */}
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-calm-yellow-400/30 to-calm-peach-400/30 rounded-full blur-3xl"></div>
                 
-                {/* Geometric shapes */}
-                <div className="absolute top-1/4 right-1/4 w-32 h-32 border-2 border-calm-turquoise-400/30 rotate-45 rounded-3xl"></div>
-                <div className="absolute bottom-1/4 left-1/3 w-24 h-24 border-2 border-calm-lilac-400/30 rotate-12 rounded-2xl"></div>
+                {/* Medium blob - bottom left - Turquoise */}
+                <div className="absolute bottom-10 left-10 w-[350px] h-[350px] bg-gradient-to-tr from-calm-turquoise-400/30 to-calm-lilac-400/20 rounded-full blur-3xl"></div>
                 
-                {/* Small dots pattern */}
-                <div className="absolute top-0 left-0 w-full h-full opacity-10">
-                  <div className="absolute top-1/3 left-1/4 w-2 h-2 bg-calm-turquoise-300 rounded-full"></div>
-                  <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-calm-lilac-300 rounded-full"></div>
-                  <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-calm-yellow-300 rounded-full"></div>
-                  <div className="absolute top-2/3 right-1/5 w-2 h-2 bg-calm-turquoise-300 rounded-full"></div>
+                {/* Small blob - bottom right - Lilac */}
+                <div className="absolute bottom-20 right-20 w-[300px] h-[300px] bg-gradient-to-bl from-calm-lilac-500/25 to-calm-yellow-400/15 rounded-full blur-3xl"></div>
+                
+                {/* Additional floating orbs */}
+                <div className="absolute top-1/4 right-1/3 w-[200px] h-[200px] bg-calm-turquoise-400/20 rounded-full blur-2xl"></div>
+                <div className="absolute bottom-1/3 left-1/4 w-[180px] h-[180px] bg-calm-lilac-400/20 rounded-full blur-2xl"></div>
+                
+                {/* Geometric shapes with gradients */}
+                <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-gradient-to-br from-calm-turquoise-400/20 to-calm-lilac-400/20 rotate-45 rounded-3xl blur-sm"></div>
+                <div className="absolute bottom-1/4 left-1/3 w-24 h-24 bg-gradient-to-bl from-calm-lilac-400/20 to-calm-yellow-400/20 rotate-12 rounded-2xl blur-sm"></div>
+                <div className="absolute top-1/2 right-1/5 w-20 h-20 bg-gradient-to-tr from-calm-yellow-400/20 to-calm-turquoise-400/20 rotate-45 rounded-xl blur-sm"></div>
+                
+                {/* Shimmer effect - diagonal gradient lines */}
+                <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_30%,rgba(255,255,255,0.05)_50%,transparent_70%)] bg-[length:200%_200%] animate-shimmer"></div>
+                
+                {/* Small dots pattern - enhanced */}
+                <div className="absolute top-0 left-0 w-full h-full opacity-20">
+                  <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-calm-turquoise-300 rounded-full blur-sm"></div>
+                  <div className="absolute top-1/2 right-1/3 w-4 h-4 bg-calm-lilac-300 rounded-full blur-sm"></div>
+                  <div className="absolute bottom-1/3 left-1/2 w-3 h-3 bg-calm-yellow-300 rounded-full blur-sm"></div>
+                  <div className="absolute top-2/3 right-1/5 w-2 h-2 bg-calm-turquoise-300 rounded-full blur-sm"></div>
+                  <div className="absolute top-1/4 right-1/2 w-2 h-2 bg-calm-lilac-300 rounded-full blur-sm"></div>
+                  <div className="absolute bottom-1/4 left-1/5 w-3 h-3 bg-calm-yellow-300 rounded-full blur-sm"></div>
                 </div>
               </div>
               
-              {/* Subtle overlay for better text contrast */}
-              <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-black/30"></div>
+              {/* Enhanced overlay for better text contrast with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/20 to-black/40"></div>
+              
+              {/* Additional depth layer */}
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,transparent_0%,rgba(0,0,0,0.3)_100%)]"></div>
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex items-center">
@@ -83,19 +114,27 @@ export const ElegantLanding: React.FC = () => {
                     <div className="lg:col-span-8 space-y-6">
                       {/* Main Title */}
                       <div className="space-y-4">
+                        {/* Badge - Für Performer */}
+                        <div className="inline-block">
+                          <span className="px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-full text-sm font-soft font-medium shadow-lg">
+                            Für Performer
+                          </span>
+                        </div>
                         {/* Groß: Hauptüberschrift */}
-                        <h1 className="text-4xl lg:text-5xl xl:text-6xl font-soft font-light leading-tight text-white">
-                          Mehr Flow & Performance
+                        <h1 className="text-xl lg:text-2xl xl:text-4xl font-soft font-light leading-tight text-white">
+                          Grenzenlos selbstbestimmt durch Microdos.in
                         </h1>
                         {/* Mittel: Untertitel - Pitch */}
                         <p className="text-2xl lg:text-3xl xl:text-4xl font-soft font-light leading-tight text-white">
-                          <span className="bg-gradient-to-r from-calm-turquoise-300 via-calm-lilac-300 to-calm-yellow-300 bg-clip-text text-transparent font-medium">
-                            in 30 Tagen zuverlässig
-                          </span>
                         </p>
                         {/* Klein: Beschreibung */}
                         <p className="text-base lg:text-lg xl:text-xl font-soft font-light leading-relaxed text-white/90 mt-2">
-                          Mit personalisiertem Microdosing, messbarem Fortschritt & voller Erfolgsgarantie
+                        <span className="mb-4 bg-gradient-to-r from-calm-turquoise-300 via-calm-lilac-300 to-calm-yellow-300 bg-clip-text text-transparent font-medium">
+                          Mehr Sicherheit durch personalisierte Mikrodosierung.
+                        </span> 
+                        <span className="mb-4 text-white/90 mt-2">
+                        Angstfrei und mit mehr Flow in 30 Tagen – dank personalisiertem Microdosing, messbarem Fortschritt und Erfolgsgarantie
+                        </span>
                         </p>
                       </div>
 
@@ -106,16 +145,16 @@ export const ElegantLanding: React.FC = () => {
 
                         {/* CTA Button */}
                         <Link to="/signup">
-                          <div className="inline-flex items-center space-x-4 bg-gradient-to-r from-calm-turquoise-100 to-calm-lilac-100 hover:from-calm-turquoise-200 hover:to-calm-lilac-200 text-slate-700 rounded-2xl px-8 py-5 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                            <div className="w-10 h-10 bg-white/40 rounded-xl flex items-center justify-center">
-                              <span className="text-slate-600 text-lg">🧠</span>
+                          <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-calm-turquoise-100 to-calm-lilac-100 hover:from-calm-turquoise-200 hover:to-calm-lilac-200 text-slate-700 rounded-xl px-5 py-3 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                            <div className="w-8 h-8 bg-white/40 rounded-lg flex items-center justify-center">
+                              <span className="text-slate-600 text-base">🧠</span>
                             </div>
                             <div className="text-left">
-                              <div className="font-soft font-semibold text-lg">
+                              <div className="font-soft font-semibold text-md">
                                 Persönliche Mikrodosierung berechnen
                               </div>
                             </div>
-                            <ArrowRight className="h-5 w-5 text-slate-600" />
+                            <ArrowRight className="h-4 w-4 text-slate-600" />
                           </div>
                         </Link>
                       </div>
@@ -192,89 +231,220 @@ export const ElegantLanding: React.FC = () => {
         </div>
       </section>
 
-      {/* Features Section with Soft Corners */}
-      <section className="px-6 py-24 bg-white/40 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-soft font-light text-slate-800 mb-4">
-              Dein komplettes Flow-System
+      {/* Journey Section - Dein komplettes Flow-System */}
+      <section className="px-6 py-24 bg-gradient-to-b from-white via-calm-turquoise-50/30 to-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-soft font-light text-slate-800 mb-6">
+              Deine Journey zu mehr Flow
             </h2>
-            <p className="text-slate-600 font-soft text-lg max-w-2xl mx-auto">
-              Alles was du brauchst, um in 30 Tagen zuverlässig mehr Flow & Performance zu erreichen
+            <p className="text-xl text-slate-600 font-soft max-w-3xl mx-auto leading-relaxed">
+              Ein System, das dich Schritt für Schritt zu deinem besten Selbst führt
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Begleitprotokoll + Biomarker Check',
-                description: 'Fokus-Score, Stimmung, Output messbar tracken → sichtbar belegter Fortschritt',
-                color: 'from-calm-turquoise-100 to-calm-lilac-100',
-                icon: '📊'
-              },
-              {
-                title: 'Erstes Microdosing-Protokoll + Habit-Stack',
-                description: 'Flow sogar bereits nach 3 Sessions messbar',
-                color: 'from-calm-lilac-100 to-calm-yellow-100',
-                icon: '🎯'
-              },
-              {
-                title: 'App Reminder + Tracking',
-                description: 'Kein "daran denken müssen" – automatische Erinnerungen & nahtloses Tracking',
-                color: 'from-calm-yellow-100 to-calm-peach-100',
-                icon: '🔔'
-              },
-              {
-                title: 'Integriertes Journal',
-                description: 'Dokumentiere deine Erfahrungen, Erkenntnisse und Fortschritte an einem Ort',
-                color: 'from-calm-peach-100 to-calm-turquoise-100',
-                icon: '📔'
-              },
-              {
-                title: 'Snackable Video-Guides',
-                description: '3–5min Tutorials – direkt loslegen ohne lange Einarbeitung',
-                color: 'from-calm-turquoise-100 to-calm-lilac-100',
-                icon: '🎥'
-              },
-              {
-                title: 'Flow-Metriken Dashboard',
-                description: 'Fortschritt visuell = Motivation steigt. Sieh deine Entwicklung auf einen Blick',
-                color: 'from-calm-lilac-100 to-calm-yellow-100',
-                icon: '📈'
-              },
-              {
-                title: 'Community für Performer',
-                description: 'Lerne High Performer kennen aus allen bedeutenden Bereichen der Gesellschaft',
-                color: 'from-calm-yellow-100 to-calm-peach-100',
-                icon: '👥'
-              },
-              {
-                title: 'Personalisierte Berechnung',
-                description: 'Wissenschaftlich fundiert – basierend auf Gewicht, Empfindlichkeit und Zielen',
-                color: 'from-calm-peach-100 to-calm-turquoise-100',
-                icon: '🧠'
-              },
-              {
-                title: 'Sicherheit im Fokus',
-                description: 'Konservative Dosierungen mit umfassenden Sicherheitsempfehlungen',
-                color: 'from-calm-turquoise-100 to-calm-lilac-100',
-                icon: '🛡️'
-              }
-            ].map((feature, index) => (
-              <div key={index} className="group">
-                <div className="p-8 bg-white/80 backdrop-blur-sm rounded-3xl border border-white/40 hover:border-calm-lilac-200 transition-all duration-300 hover:shadow-lg hover:scale-105">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm`}>
-                    <span className="text-2xl">{feature.icon}</span>
+          {/* Journey Steps */}
+          <div className="space-y-32">
+            
+            {/* Step 1: Persönliche Berechnung */}
+            <div className="relative">
+              {/* Connection Line */}
+              <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-calm-turquoise-200 via-calm-lilac-200 to-calm-yellow-200 transform -translate-x-1/2 -translate-y-16"></div>
+              
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Visual Element - Left */}
+                <div className="relative order-2 lg:order-1">
+                  <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+                    {/* Emotional Visual Background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-calm-turquoise-400 via-calm-turquoise-300 to-calm-lilac-300">
+                      {/* Abstract shapes for emotional appeal */}
+                      <div className="absolute top-10 left-10 w-32 h-32 bg-white/20 rounded-full blur-2xl"></div>
+                      <div className="absolute bottom-10 right-10 w-40 h-40 bg-calm-lilac-400/30 rounded-full blur-2xl"></div>
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+                      
+                      {/* Scientific/Precision elements */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center space-y-4">
+                          <div className="text-7xl mb-4">🧬</div>
+                          <div className="w-24 h-1 bg-white/40 mx-auto rounded-full"></div>
+                          <div className="w-16 h-1 bg-white/30 mx-auto rounded-full"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-soft font-semibold text-slate-800 mb-3">
-                    {feature.title}
+                  
+                  {/* Step Number Badge */}
+                  <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-calm-turquoise-500 to-calm-lilac-500 rounded-2xl flex items-center justify-center shadow-xl border-4 border-white">
+                    <span className="text-2xl font-bold text-white">1</span>
+                  </div>
+                </div>
+
+                {/* Content - Right */}
+                <div className="order-1 lg:order-2 space-y-6">
+                  <div className="inline-block">
+                    <span className="px-4 py-2 bg-calm-turquoise-100 text-calm-turquoise-700 rounded-full text-sm font-soft font-medium">
+                      Start deiner Journey
+                    </span>
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-soft font-light text-slate-800 leading-tight">
+                    Deine persönliche Mikrodosierung
                   </h3>
-                  <p className="text-slate-600 leading-relaxed font-soft text-sm">
-                    {feature.description}
+                  <p className="text-lg text-slate-600 font-soft leading-relaxed">
+                    Gib dein Gewicht, Alter und Geschlecht an. Unser wissenschaftlich fundierter Algorithmus berechnet deine individuelle, sichere Mikrodosierung – präzise auf dich abgestimmt.
                   </p>
+                  <div className="pt-4">
+                    <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-calm-turquoise-50 to-calm-lilac-50 rounded-2xl border border-calm-turquoise-200/50">
+                      <span className="text-2xl">🔬</span>
+                      <span className="font-soft font-medium text-slate-700">
+                        Sicherheit und Präzision, Wissenschaftlich fundiert
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* Step 2: App-Begleitung & Tracking */}
+            <div className="relative">
+              {/* Connection Line */}
+              <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-calm-yellow-200 via-calm-peach-200 to-calm-turquoise-200 transform -translate-x-1/2 -translate-y-16"></div>
+              
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Content - Left */}
+                <div className="space-y-6">
+                  <div className="inline-block">
+                    <span className="px-4 py-2 bg-calm-lilac-100 text-calm-lilac-700 rounded-full text-sm font-soft font-medium">
+                      Dein täglicher Begleiter
+                    </span>
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-soft font-light text-slate-800 leading-tight">
+                    Deine App begleitet dich
+                  </h3>
+                  <p className="text-lg text-slate-600 font-soft leading-relaxed">
+                    Unsere App erinnert dich automatisch an deine Sessions. Durch Journaling holst du das Maximum aus jeder einzelnen Session heraus. Tracke deinen Fokus, deine Stimmung und deinen Output – messbar, sichtbar, belegter Fortschritt.
+                  </p>
+                  <div className="space-y-4 pt-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-10 h-10 bg-gradient-to-br from-calm-turquoise-400 to-calm-lilac-400 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-xl">📊</span>
+                      </div>
+                      <div>
+                        <p className="font-soft font-medium text-slate-800">Flow-Metriken Dashboard</p>
+                        <p className="text-slate-600 font-soft text-sm">Fortschritt visuell = Motivation steigt</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-10 h-10 bg-gradient-to-br from-calm-lilac-400 to-calm-yellow-400 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-xl">📔</span>
+                      </div>
+                      <div>
+                        <p className="font-soft font-medium text-slate-800">Integriertes Journal</p>
+                        <p className="text-slate-600 font-soft text-sm">Jede Session dokumentieren, jede Erkenntnis festhalten</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-10 h-10 bg-gradient-to-br from-calm-yellow-400 to-calm-peach-400 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-xl">🔔</span>
+                      </div>
+                      <div>
+                        <p className="font-soft font-medium text-slate-800">Automatische Erinnerungen</p>
+                        <p className="text-slate-600 font-soft text-sm">Kein "daran denken müssen" – die App denkt für dich</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Visual Element - Right */}
+                <div className="relative">
+                  <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+                    {/* Emotional Visual Background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-calm-lilac-400 via-calm-yellow-300 to-calm-peach-300">
+                      {/* Abstract shapes */}
+                      <div className="absolute top-20 right-20 w-36 h-36 bg-white/20 rounded-full blur-2xl"></div>
+                      <div className="absolute bottom-20 left-20 w-44 h-44 bg-calm-turquoise-400/30 rounded-full blur-2xl"></div>
+                      <div className="absolute top-1/3 left-1/3 w-32 h-32 bg-white/15 rounded-full blur-xl"></div>
+                      
+                      {/* Growth/Progress elements */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center space-y-4">
+                          <div className="text-7xl mb-4">📈</div>
+                          <div className="flex items-end justify-center space-x-2 h-20">
+                            <div className="w-8 bg-white/50 rounded-t-lg" style={{ height: '40%' }}></div>
+                            <div className="w-8 bg-white/60 rounded-t-lg" style={{ height: '60%' }}></div>
+                            <div className="w-8 bg-white/70 rounded-t-lg" style={{ height: '80%' }}></div>
+                            <div className="w-8 bg-white/80 rounded-t-lg" style={{ height: '100%' }}></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Step Number Badge */}
+                  <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-calm-lilac-500 to-calm-yellow-500 rounded-2xl flex items-center justify-center shadow-xl border-4 border-white">
+                    <span className="text-2xl font-bold text-white">2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3: Community */}
+            <div className="relative">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Visual Element - Left */}
+                <div className="relative order-2 lg:order-1">
+                  <div className="relative h-96 rounded-3xl overflow-hidden shadow-2xl">
+                    {/* Emotional Visual Background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-calm-peach-400 via-calm-yellow-300 to-calm-turquoise-300">
+                      {/* Abstract shapes */}
+                      <div className="absolute top-10 left-10 w-40 h-40 bg-white/20 rounded-full blur-2xl"></div>
+                      <div className="absolute bottom-10 right-10 w-36 h-36 bg-calm-lilac-400/30 rounded-full blur-2xl"></div>
+                      <div className="absolute top-1/2 right-1/4 w-28 h-28 bg-white/15 rounded-full blur-xl"></div>
+                      
+                      {/* Community/Connection elements */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center space-y-4">
+                          <div className="text-7xl mb-4">🤝</div>
+                          <div className="flex items-center justify-center space-x-3">
+                            <div className="w-12 h-12 bg-white/40 rounded-full"></div>
+                            <div className="w-16 h-16 bg-white/50 rounded-full"></div>
+                            <div className="w-12 h-12 bg-white/40 rounded-full"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Step Number Badge */}
+                  <div className="absolute -top-6 -left-6 w-16 h-16 bg-gradient-to-br from-calm-peach-500 to-calm-yellow-500 rounded-2xl flex items-center justify-center shadow-xl border-4 border-white">
+                    <span className="text-2xl font-bold text-white">3</span>
+                  </div>
+                </div>
+
+                {/* Content - Right */}
+                <div className="order-1 lg:order-2 space-y-6">
+                  <div className="inline-block">
+                    <span className="px-4 py-2 bg-calm-peach-100 text-calm-peach-700 rounded-full text-sm font-soft font-medium">
+                      Dein Netzwerk
+                    </span>
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-soft font-light text-slate-800 leading-tight">
+                    Community für Performer
+                  </h3>
+                  <p className="text-lg text-slate-600 font-soft leading-relaxed">
+                    Lerne High Performer kennen aus allen bedeutenden Bereichen der Gesellschaft. Baue Partnerschaften für dein Business und erreicht eure Ziele gemeinsam. Eine Community, die wächst, lernt und gemeinsam erfolgreich wird.
+                  </p>
+                  <div className="pt-4">
+                    <div className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-calm-peach-50 to-calm-yellow-50 rounded-2xl border border-calm-peach-200/50">
+                      <span className="text-2xl">🚀</span>
+                      <span className="font-soft font-medium text-slate-700">
+                        Gemeinsam höher hinaus
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
