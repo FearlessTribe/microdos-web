@@ -85,17 +85,17 @@ export const ElegantLanding: React.FC = () => {
                       <div className="space-y-4">
                         {/* Groß: Hauptüberschrift */}
                         <h1 className="text-4xl lg:text-5xl xl:text-6xl font-soft font-light leading-tight text-white">
-                          Grenzenlos selbstbestimmt
+                          Mehr Flow & Performance
                         </h1>
-                        {/* Mittel: Untertitel */}
+                        {/* Mittel: Untertitel - Pitch */}
                         <p className="text-2xl lg:text-3xl xl:text-4xl font-soft font-light leading-tight text-white">
                           <span className="bg-gradient-to-r from-calm-turquoise-300 via-calm-lilac-300 to-calm-yellow-300 bg-clip-text text-transparent font-medium">
-                            durch personalisierte & sichere Microdos.in Experience
+                            in 30 Tagen zuverlässig
                           </span>
                         </p>
                         {/* Klein: Beschreibung */}
                         <p className="text-base lg:text-lg xl:text-xl font-soft font-light leading-relaxed text-white/90 mt-2">
-                          Bring dein Leben auf das nächste Level – mit klarerem Fokus, mehr Kreativität & spürbar besserer Stimmung durch
+                          Mit personalisiertem Microdosing, messbarem Fortschritt & voller Erfolgsgarantie
                         </p>
                       </div>
 
@@ -170,55 +170,95 @@ export const ElegantLanding: React.FC = () => {
         </div>
       </section>
 
+      {/* Flow-Boost Garantie Section - Prominent */}
+      <section className="px-6 py-16 bg-gradient-to-br from-calm-turquoise-50 via-calm-lilac-50 to-calm-yellow-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-2 border-calm-turquoise-200 shadow-xl">
+            <div className="text-center space-y-6">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-calm-turquoise-400 to-calm-lilac-400 rounded-2xl mb-4">
+                <span className="text-4xl">✨</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-soft font-semibold text-slate-800">
+                Flow-Boost Garantie
+              </h2>
+              <p className="text-xl md:text-2xl font-soft font-medium text-slate-700 leading-relaxed">
+                Wenn du nach 30 Tagen nicht spürbar leichter in Flow kommst → 
+                <span className="block mt-2 bg-gradient-to-r from-calm-turquoise-500 to-calm-lilac-500 bg-clip-text text-transparent">
+                  nächster Monat kostenlos.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section with Soft Corners */}
       <section className="px-6 py-24 bg-white/40 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-soft font-light text-slate-800 mb-4">
-              Why Choose Microdos.in?
+              Dein komplettes Flow-System
             </h2>
             <p className="text-slate-600 font-soft text-lg max-w-2xl mx-auto">
-              Wissenschaftlich fundierte Berechnungen für eine sichere und effektive Mikrodosierung
+              Alles was du brauchst, um in 30 Tagen zuverlässig mehr Flow & Performance zu erreichen
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: 'Wissenschaftlich fundiert',
-                description: 'Basierend auf aktuellen Studien und pharmakologischen Erkenntnissen',
+                title: 'Begleitprotokoll + Biomarker Check',
+                description: 'Fokus-Score, Stimmung, Output messbar tracken → sichtbar belegter Fortschritt',
                 color: 'from-calm-turquoise-100 to-calm-lilac-100',
-                icon: '🧠'
+                icon: '📊'
+              },
+              {
+                title: 'Erstes Microdosing-Protokoll + Habit-Stack',
+                description: 'Flow sogar bereits nach 3 Sessions messbar',
+                color: 'from-calm-lilac-100 to-calm-yellow-100',
+                icon: '🎯'
+              },
+              {
+                title: 'App Reminder + Tracking',
+                description: 'Kein "daran denken müssen" – automatische Erinnerungen & nahtloses Tracking',
+                color: 'from-calm-yellow-100 to-calm-peach-100',
+                icon: '🔔'
+              },
+              {
+                title: 'Integriertes Journal',
+                description: 'Dokumentiere deine Erfahrungen, Erkenntnisse und Fortschritte an einem Ort',
+                color: 'from-calm-peach-100 to-calm-turquoise-100',
+                icon: '📔'
+              },
+              {
+                title: 'Snackable Video-Guides',
+                description: '3–5min Tutorials – direkt loslegen ohne lange Einarbeitung',
+                color: 'from-calm-turquoise-100 to-calm-lilac-100',
+                icon: '🎥'
+              },
+              {
+                title: 'Flow-Metriken Dashboard',
+                description: 'Fortschritt visuell = Motivation steigt. Sieh deine Entwicklung auf einen Blick',
+                color: 'from-calm-lilac-100 to-calm-yellow-100',
+                icon: '📈'
+              },
+              {
+                title: 'Community für Performer',
+                description: 'Lerne High Performer kennen aus allen bedeutenden Bereichen der Gesellschaft',
+                color: 'from-calm-yellow-100 to-calm-peach-100',
+                icon: '👥'
               },
               {
                 title: 'Personalisierte Berechnung',
-                description: 'Berücksichtigt Gewicht, Empfindlichkeit und individuelle Ziele',
-                color: 'from-calm-lilac-100 to-calm-yellow-100',
-                icon: '⚖️'
+                description: 'Wissenschaftlich fundiert – basierend auf Gewicht, Empfindlichkeit und Zielen',
+                color: 'from-calm-peach-100 to-calm-turquoise-100',
+                icon: '🧠'
               },
               {
                 title: 'Sicherheit im Fokus',
                 description: 'Konservative Dosierungen mit umfassenden Sicherheitsempfehlungen',
-                color: 'from-calm-yellow-100 to-calm-peach-100',
-                icon: '🛡️'
-              },
-              {
-                title: 'Individuelle Anpassung',
-                description: 'Berücksichtigt Erfahrung, Medikamente und persönliche Faktoren',
-                color: 'from-calm-peach-100 to-calm-turquoise-100',
-                icon: '💖'
-              },
-              {
-                title: 'Protokoll & Tracking',
-                description: 'Verfolgen Sie Ihre Erfahrungen und passen Sie die Dosierung an',
                 color: 'from-calm-turquoise-100 to-calm-lilac-100',
-                icon: '📅'
-              },
-              {
-                title: 'Verschiedene Substanzen',
-                description: 'Unterstützung für Psilocybin, LSD, Amanita und Ketamin',
-                color: 'from-calm-lilac-100 to-calm-yellow-100',
-                icon: '✨'
+                icon: '🛡️'
               }
             ].map((feature, index) => (
               <div key={index} className="group">
@@ -247,13 +287,13 @@ export const ElegantLanding: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-soft font-light text-slate-800">
-              Begin your journey to
+              Bereit für mehr Flow?
               <span className="block bg-gradient-to-r from-calm-turquoise-400 to-calm-lilac-400 bg-clip-text text-transparent font-medium">
-                mental clarity
+                in 30 Tagen zuverlässig
               </span>
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto font-soft font-light leading-relaxed">
-              Starten Sie noch heute mit einer wissenschaftlich fundierten, personalisierten Berechnung
+              Mit personalisiertem Microdosing, messbarem Fortschritt & voller Erfolgsgarantie
             </p>
           </div>
           
