@@ -74,7 +74,7 @@ export function LoginPage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              {/* Twitter Login */}
+              { /*Twitter Login 
               <Button
                 type="button"
                 variant="outline"
@@ -85,6 +85,7 @@ export function LoginPage() {
                 <Twitter className="mr-2 h-4 w-4" />
                 Mit Twitter fortfahren
               </Button>
+              */}
 
               <div className="relative">
                 <div className="absolute inset-0 flex items-center">

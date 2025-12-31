@@ -107,7 +107,7 @@ export function SignupPage() {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6">
-            {/* Twitter Signup */}
+            {/* Twitter Signup 
             <Button
               type="button"
               variant="outline"
@@ -117,7 +117,7 @@ export function SignupPage() {
             >
               <Twitter className="mr-2 h-4 w-4" />
               Mit Twitter fortfahren
-            </Button>
+            </Button>*/}
 
             {/* Extended Signup with Microdose Calculator */}
             <Button
