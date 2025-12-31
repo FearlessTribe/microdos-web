@@ -209,21 +209,21 @@ export const ElegantLanding: React.FC = () => {
         </div>
       </section>
 
-      {/* Flow-Boost Garantie Section - Prominent */}
-      <section className="px-6 py-16 bg-gradient-to-br from-calm-turquoise-50 via-calm-lilac-50 to-calm-yellow-50">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 border-2 border-calm-turquoise-200 shadow-xl">
-            <div className="text-center space-y-6">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-calm-turquoise-400 to-calm-lilac-400 rounded-2xl mb-4">
-                <span className="text-4xl">✨</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-soft font-semibold text-slate-800">
+      {/* Flow-Boost Garantie Banner - Full Width */}
+      <section className="w-full py-6 bg-gradient-to-r from-calm-turquoise-50 via-calm-lilac-50 to-calm-yellow-50 border-y border-calm-turquoise-200/50">
+        <div className="w-full">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
+            <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-calm-turquoise-400 to-calm-lilac-400 rounded-xl flex-shrink-0">
+              <span className="text-2xl">✨</span>
+            </div>
+            <div className="text-center md:text-left">
+              <h3 className="text-lg md:text-xl font-soft font-semibold text-slate-800 mb-1">
                 Flow-Boost Garantie
-              </h2>
-              <p className="text-xl md:text-2xl font-soft font-medium text-slate-700 leading-relaxed">
+              </h3>
+              <p className="text-sm md:text-base font-soft text-slate-600 leading-relaxed">
                 Wenn du nach 30 Tagen nicht spürbar leichter in Flow kommst → 
-                <span className="block mt-2 bg-gradient-to-r from-calm-turquoise-500 to-calm-lilac-500 bg-clip-text text-transparent">
-                  nächster Monat kostenlos.
+                <span className="text-calm-turquoise-600 font-medium">
+                  nächster Monat kostenlos
                 </span>
               </p>
             </div>
